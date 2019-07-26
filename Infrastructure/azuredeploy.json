@@ -17,9 +17,6 @@
         "https://localhost"
       ]
     },
-    "corsSupportCredentials": {
-      "type": "bool"
-    },
     "KeyVaultCertificateSecretName": {
       "type": "string",
       "defaultValue": "KeyVaultCertificateSecretName"
