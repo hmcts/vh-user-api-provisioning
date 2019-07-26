@@ -10,6 +10,20 @@
       "type": "string",
       "defaultValue": "AzureWebsite"
     },
+    "allowedCorsOrigins": {
+      "type": "string",
+      "defaultValue": [
+        "http://localhost",
+        "https://localhost"
+      ]
+    },
+    "corsSupportCredentials": {
+      "type": "bool"
+    },
+    "KeyVaultCertificateSecretName": {
+      "type": "string",
+      "defaultValue": "KeyVaultCertificateSecretName"
+    },
     "certificateThumbprint": {
       "type": "string",
       "defaultValue": "certificateThumbprint"
@@ -43,7 +57,9 @@
           "appServicePlanName": { "value": "[parameters('appServicePlanName')]" },
           "webAppPortalName": { "value": "[parameters('AzureWebsite')]" },
           "certificateThumbprint": { "value": "[parameters('certificateThumbprint')]" },
-          "customHostname": { "value": "[parameters('customHostname')]" }
+          "customHostname": { "value": "[parameters('customHostname')]" },
+          "allowedCorsOrigins": { "value": "[parameters('allowedCorsOrigins')]" },
+          "corsSupportCredentials": { "value": "[parameters('corsSupportCredentials')]" }
         }
       }
     }
