@@ -58,8 +58,7 @@
           "webAppPortalName": { "value": "[parameters('AzureWebsite')]" },
           "certificateThumbprint": { "value": "[parameters('certificateThumbprint')]" },
           "customHostname": { "value": "[parameters('customHostname')]" },
-          "allowedCorsOrigins": { "value": "[parameters('allowedCorsOrigins')]" },
-          "corsSupportCredentials": { "value": "[parameters('corsSupportCredentials')]" }
+          "allowedCorsOrigins": { "value": "[parameters('allowedCorsOrigins')]" }
         }
       }
     }
