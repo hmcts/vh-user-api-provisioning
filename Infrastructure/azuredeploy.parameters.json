@@ -8,6 +8,9 @@
     "AzureWebsite": {
       "value": "AzureWebsite"
     },
+    "allowedCorsOrigins": {
+      "value": "http://localhost, https://localhost"
+    },
     "customHostname": {
       "value": "customHostname"
     },
